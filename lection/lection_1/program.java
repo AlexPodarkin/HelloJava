@@ -27,21 +27,21 @@ public class program {
         // Вещественные числа
         float e = 2.7f;
         double pi = 3.1415;
-        System.out.println(e +" < double обязательно указать \"f\"| для dauble необязательно > "+ pi);
+        System.out.println(e + " < double обязательно указать \"f\"| для dauble необязательно > " + pi);
         // для doble можно указать "D" , но не обязательно.
 
         // Тип char
-        char ch = '1' ;
+        char ch = '1';
         System.out.println(Character.isDigit(ch)); // это число ! true
-        ch = 'a' ;
+        ch = 'a';
         System.out.println(Character.isDigit(ch)); // false
 
         int a = 15;
         double d = a;
-        System.out.println("положили инт в дабл > "+d);
+        System.out.println("положили инт в дабл > " + d);
         // a = d так делать нельзя нужно преобразование
 
-        // тип данных  boolean
+        // тип данных boolean
         boolean flag1 = 123 <= 234;
         System.out.println(flag1); // true
         boolean flag2 = 123 >= 234;
@@ -53,17 +53,16 @@ public class program {
 
         // неявная типизация var
         var v = 15;
-        System.out.println( getType(v) );
+        System.out.println(getType(v));
         var v1 = 123.15;
-        System.out.println( getType(v1) ); // Ниже создал метод / функциб для работы getType
-        //System.out.println(v.getClass().getSimpleName()); так почему не работает !
-        
-        
+        System.out.println(getType(v1)); // Ниже создал метод / функциб для работы getType
+        // System.out.println(v.getClass().getSimpleName()); так почему не работает !
+
         // Комментарии
         int num = 5;
         String asd = Integer.toString(num); // Конвртация числа в строку
-        System.out.println(getType(asd));   // String
-        num = 1_555_300;                    // Можно записывать числа так для наглядности
+        System.out.println(getType(asd)); // String
+        num = 1_555_300; // Можно записывать числа так для наглядности
         System.out.println(num);
         String ctr = "Aleksandr";
         System.out.println(ctr.charAt(0)); // Напечатать букву в строке
@@ -77,23 +76,23 @@ public class program {
 
         // Массивы
 
-        int[] arr = new int[10];        // создание массива на 10 элементов [0,0,0,0,0,0,0,0,0,0]
+        int[] arr = new int[10]; // создание массива на 10 элементов [0,0,0,0,0,0,0,0,0,0]
         System.out.println(arr.length); // длина массива
 
-        arr = new int[] {1, 2, 3, 4, 5};// переопределенее массива
+        arr = new int[] { 1, 2, 3, 4, 5 };// переопределенее массива
         System.out.println(Arrays.toString(arr)); // печать массива
-        arr[4] = 10;                    // перезапись элемента массива
-        System.out.println(arr[4]);     // обращение к элементу массива
+        arr[4] = 10; // перезапись элемента массива
+        System.out.println(arr[4]); // обращение к элементу массива
 
-        int[] array[] = new int[3][5];  // создание 2х мерного массива
-        array[1][1] = 5;                // обращение к элементу 2х мерного массива
-        for (int[] line : array) {      // печать 2х мерного массива
+        int[] array[] = new int[3][5]; // создание 2х мерного массива
+        array[1][1] = 5; // обращение к элементу 2х мерного массива
+        for (int[] line : array) { // печать 2х мерного массива
             for (int item : line) {
                 System.out.printf("%d ", item);
             }
             System.out.println();
         }
-        System.out.println(array.length);   // количество строк
+        System.out.println(array.length); // количество строк
         System.out.println(array[0].length);// количество столбцов в [0] строке.
         int[][] array2 = new int[3][3];
         for (int k = 0; k < array2.length; k++) {
@@ -108,33 +107,31 @@ public class program {
         String chislo = "5.123";
         float chislo1 = Float.parseFloat(chislo); // преобразовали строку в число float
         System.out.println(chislo1);
-        int chislo2 = (int)chislo1; // преобразовали число float к числу int
+        int chislo2 = (int) chislo1; // преобразовали число float к числу int
         System.out.println(chislo2);
-        
+
         // Получение данных из терминала
 
-        // используем =>  import java.util.Scanner;
-        //iScanner(); // функция приветствия пользователя !
-        //iScanner1(); // функция считывает число из консоли + ариф операция
+        // используем => import java.util.Scanner;
+        // iScanner(); // функция приветствия пользователя !
+        // iScanner1(); // функция считывает число из консоли + ариф операция
 
-        // Форматированный вывод 
+        // Форматированный вывод
         int a1 = 1, b1 = 2;
         int c1 = a1 + b1;
-        String res = String.format("%d + %d = %d \n", a1 , b1 , c1 );
-        System.out.printf("%s + %d = %b \n", a1 , b1 , c1 );
+        String res = String.format("%d + %d = %d \n", a1, b1, c1);
+        System.out.printf("%s + %d = %b \n", a1, b1, c1);
         System.out.println(res);
-        // %d - целые %x- 16х чисел %f - плавающей точкой %e- для 3,1415е+01  
+        // %d - целые %x- 16х чисел %f - плавающей точкой %e- для 3,1415е+01
         // %c - одиночный символ %s - для строковых значений
-
-        
-      
-
-
+        // область видимости {} - будь внимателен с областью в которой кодишь )
+        // то что снаружи доступно внутри {}, то что внутри не доступно снаружи
     }
 
     static String getType(Object o) {
         return o.getClass().getSimpleName();
     }
+
     static void iScanner() {
         Scanner iScanner = new Scanner(System.in);
         System.out.print("Введите имя : ");
@@ -142,6 +139,7 @@ public class program {
         System.out.printf("Привет, %s!\n", name);
         iScanner.close();
     }
+
     static void iScanner1() {
         Scanner iScanner = new Scanner(System.in);
         System.out.print("Введите число : ");
