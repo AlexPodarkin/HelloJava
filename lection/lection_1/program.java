@@ -27,7 +27,7 @@ public class program {
         // Вещественные числа
         float e = 2.7f;
         double pi = 3.1415;
-        System.out.println(e + " < double обязательно указать \"f\"| для dauble необязательно > " + pi);
+        System.out.println(e + " < double обязательно указать \"f\"| для double необязательно > " + pi);
         // для doble можно указать "D" , но не обязательно.
 
         // Тип char
@@ -55,7 +55,7 @@ public class program {
         var v = 15;
         System.out.println(getType(v));
         var v1 = 123.15;
-        System.out.println(getType(v1)); // Ниже создал метод / функциб для работы getType
+        System.out.println(getType(v1)); // Ниже создал метод / функцию для работы getType
         // System.out.println(v.getClass().getSimpleName()); так почему не работает !
 
         // Комментарии
