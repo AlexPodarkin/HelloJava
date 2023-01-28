@@ -46,7 +46,7 @@ public class CalkLog
         //fh.setFormatter(xml);
 
         logger.info(date.toString());
-        logger.info("Пользователь ввел 1 число = " + a );
+        logger.info("Пользователь ввел 1 число = " + a  + "\nПользователь ввел 2 число = " + b);
         logger.info("Пользователь ввел 2 число = " + b );
         logger.info("Пользователь ввел оператор '" + op + "'" );
         logger.info
