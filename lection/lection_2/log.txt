@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-01-26T12:27:25.452186200Z</date>
+  <millis>1674736045452</millis>
+  <nanos>186200</nanos>
+  <sequence>0</sequence>
+  <logger>lection.lection_2.logirovanie</logger>
+  <level>INFO</level>
+  <class>lection.lection_2.logirovanie</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Log:</message>
+</record>
+</log>
