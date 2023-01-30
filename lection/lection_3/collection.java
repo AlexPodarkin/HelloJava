@@ -2,15 +2,17 @@ package lection.lection_3;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.text.html.HTMLDocument.Iterator;
 import java.util.Arrays;
 
 public class collection {
     public static void main(String[] args) 
-    {
-        System.out.println("5");
-
+    {  
+        System.out.println("5".getClass().getName()); // .getClass().getName() - узнать тип данных
+        // ниже метод static Object Sum, возвращает объект что позволяет
+        // использовать разные типы данных в методе ! не надо делать метод под каждый тип данных!
         System.out.println(Sum(1, 2));
-        System.out.println(Sum(1.0, 2));
+        System.out.println(Sum(1.0, 2.0));
         System.out.println(Sum(1, 2.0));
         System.out.println(Sum(1.2, 2.1));
 
@@ -22,7 +24,9 @@ public class collection {
             System.out.println(o);
         }
            
-
+        ArrayList list0 = new ArrayList();  // неявная типизация(сырые данные)
+        // использование object`а в неявной типизации 
+        // instanceof проверка переменной (а instanceof Double)
         ArrayList<Integer> list5 = new ArrayList<Integer>();
         ArrayList<Integer> list6 = new ArrayList<>();
         ArrayList<Integer> list3 = new ArrayList<>(10);
@@ -56,9 +60,14 @@ public class collection {
         List<Integer> d = Arrays.asList(date);
         System.out.println(d); // [29, 9, 1990]
 
+        List<Integer> dlyaIter = List.of(1,2,3);
+        // Iterator<Integer> iter = dlyaIter.iterator(); надо разобраться !!!
+        // while (dlyaIter.hasNext()) должен работать для Iterator<Integer>
+        // + ListIterator<Integer> iter // тоже не работает  
+        
 
 
-    }
+    } // END main
  
     static Object Sum(Object a, Object b) 
     {
