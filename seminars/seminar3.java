@@ -94,6 +94,16 @@ public class seminar3 {
         }
         System.out.println(list); */
 
+        System.out.println(list3.get(0) == list3.get(2)); // == сравнивает ссылки
+        System.out.println(list3.get(0).equals(list3.get(2))); 
+        // сравнивает конкретное значение
+        if (list3.get(0) instanceof Number) // проверка типа(можно указать Integer если целые)
+        // в данном случае на числовое значение 
+        {
+            System.out.println(list3.get(0) + "является числом!");
+        }
+
+
 
 
 
