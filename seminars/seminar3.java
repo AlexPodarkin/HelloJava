@@ -106,11 +106,5 @@ public class seminar3 {
 
 
 
-
-
-
-
-
-
     }   
 }

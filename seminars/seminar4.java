@@ -34,8 +34,6 @@ public class seminar4
         timeFinish = System.currentTimeMillis();
         System.out.println(timeFinish-timeStart);
 
-
-
     }
     static void Zadacha2()
     {

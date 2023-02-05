@@ -97,10 +97,7 @@ public class seminar1 {
         int[] array = new int[]{3,2,5,3};
         System.out.println(Arrays.toString(array)); // Напечатать массив
         System.out.println(array[0]);               // Обратиться по индексу
-        
-
-
-        
+          
 
     }
 }

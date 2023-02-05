@@ -16,12 +16,7 @@ public class seminar2 {
         Zadacha1();
         //Zadacha2();
 
-        //Zadacha3();
-
-            
-        
-  
-        
+        //Zadacha3();       
 
 
     }
