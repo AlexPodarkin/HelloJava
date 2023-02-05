@@ -39,5 +39,6 @@ public class API {
         String sk = "Sergei`ka";
         System.out.println(sk.toLowerCase());
         System.out.println(String.join(" ", name));
+        
     } 
 }

@@ -18,7 +18,7 @@ public class collection {
 
         ArrayList<Integer> list1 = new ArrayList<>();
         list1.add(5_123);
-        ArrayList<String> list2 = new ArrayList<>(); // без типизации
+        ArrayList<String> list2 = new ArrayList<>(); //  без типизации
         for (Object o : list1)
         {
             System.out.println(o);
@@ -65,7 +65,6 @@ public class collection {
         // while (dlyaIter.hasNext()) должен работать для Iterator<Integer>
         // + ListIterator<Integer> iter // тоже не работает  
         
-
 
     } // END main
  
