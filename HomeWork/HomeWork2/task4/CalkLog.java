@@ -53,6 +53,6 @@ public class CalkLog
         ("Пользователь получил ответ : " + a + " " + op + " " + b + " = " + res + "\n");
 
         
-    } // END MAIN
+    }  // END MAIN
 
 }
