@@ -9,8 +9,7 @@ public class task1_2
     {
         Zadacha1();
         Zadacha2();
-    }
-    // END MAIN
+    }// END MAIN
 
     static void Zadacha1()
     {
