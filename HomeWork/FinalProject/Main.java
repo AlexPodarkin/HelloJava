@@ -21,7 +21,7 @@ public class Main
         ("005", 16, "Solaris", 512, "IBM"));
         //System.out.println(set);
 
-        OperationWithNotebook operation = new OperationWithNotebook(set);
+        Operation operation = new Operation(set);
         operation.start();
 
     }

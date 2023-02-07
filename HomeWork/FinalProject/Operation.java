@@ -2,7 +2,7 @@ package HomeWork.FinalProject;
 
 import java.util.*;
 
-public class OperationWithNotebook 
+public class Operation 
 {
     private Set<Notebook> notebooks = new HashSet<>();
     private List<Criterion> criterionList = new ArrayList<>();
@@ -69,13 +69,13 @@ public class OperationWithNotebook
         return true;
     }
 
-    public OperationWithNotebook(Set<Notebook> notebooks) 
+    public Operation(Set<Notebook> notebooks) 
     {
         this.scanner = new Scanner(System.in);
         this.notebooks = notebooks;
     }
 
-    public OperationWithNotebook(Set<Notebook> notebooks, List<Criterion> criterionList) 
+    public Operation(Set<Notebook> notebooks, List<Criterion> criterionList) 
     {
         this.scanner = new Scanner(System.in);
         this.notebooks = notebooks;
