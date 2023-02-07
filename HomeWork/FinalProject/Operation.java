@@ -128,7 +128,7 @@ public class Operation
     public String getOperations() 
     {
         String text = "   --------------\n        Меню \n   --------------\n " +
-                "1. Критерии выбора \n " +
+                "1. Выбор параметра \n " +
                 "2. Список ноутбуков\n " +
                 "3. Выход";
         System.out.println(text);

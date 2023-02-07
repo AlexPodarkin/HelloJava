@@ -23,6 +23,7 @@ public class Main
 
         Operation operation = new Operation(set);
         operation.start();
+        System.out.println("\nВсего доброго! \nБыло приятно иметь с вами дело!");
 
     }
 }
